@@ -5,3 +5,20 @@
 # For example, the list of fruits below should return ["apple", "banana"], and the list of names should return "no duplicates".
 # fruits = ['apple', 'orange', 'banana', 'apple', 'banana']
 # names = ['Yoda', 'Moses', 'Joshua', 'Mark'] 
+
+def check_duplicates(list):
+    duplicates = []
+    for word in list:
+        if list.count(word) > 1:
+            if not word in duplicates:
+                duplicates.append(word)
+    if duplicates:
+        return duplicates
+    else:
+        return "No duplicates"
+        
+    
+names = ['Yoda', 'Moses', 'Joshua', 'Mark']
+fruits = ['apple', 'orange', 'banana', 'apple', 'banana']
+print(check_duplicates(fruits))
+print(check_duplicates(names))
