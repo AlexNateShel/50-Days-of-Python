@@ -3,12 +3,7 @@
 # Use list comprehension.
 
 def biggest_odd(string):
-    odd = []
-    for i in string:
-        i = int(i)
-        if i % 2 != 0:
-            odd.append(i)
-    return max(odd)
-
+    odd_nums = [i for i in string if int(i) % 2 != 0]
+    return f'The biggest odd number is {max(odd_nums)}'
 
 print(biggest_odd('23569'))
