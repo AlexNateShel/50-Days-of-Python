@@ -3,15 +3,10 @@
 # For example, "h.e.l.p." should return 4 dots, and "he.lp." should return 2 dots.
 
 def count_dots(str):
-    count = 0
-    for z in str:
-        if z == '.':
-            count += 1
-        else:
-            continue
-    return f'The string has {count} dots.'
+    x = str.split('.')
+    return f'The string has {len(x)-1} dots.'
 
 str1 = 'h.e.l.p.'
-print(count_dots(str1))
 str2 = 'he.lp.'
+print(count_dots(str1))
 print(count_dots(str2))
