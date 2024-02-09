@@ -10,8 +10,13 @@ def add_reverse(lst1:list, lst2:list):
             combined_list.append(lst1[num] + lst2[num])
             combined_list.reverse()
         return combined_list
+    else:
+        return 'The lists are not of equal length.'
+        
     
 
 list1 = [10, 12, 34]
 list2 = [12, 56, 78]
 print(add_reverse(list1, list2))
+list3 = [22, 55, 99, 87]
+print(add_reverse(list1, list3))
