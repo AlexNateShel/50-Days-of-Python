@@ -9,18 +9,13 @@ t = 'Hate war love Peace'
 # Should return '12 - war (3), love (4)'.
 # Hate and Peace will be ignored because they have at least one uppercase letter.
 
-import math
-
 def multiply_words(s: str):
-    words_length = { }
-    answer = 1
+    words_len = 1
+
     for word in s.split():
         if word.islower():
-           words_length[word] = len(word)
-    for v in words_length:
-        answer =  answer * words_length[v]
-    return f'{answer}: {words_length}'
-
+            words_len *= len(word)
+    return f'The product of the words lengths is: {words_len}'
 
 print(multiply_words(s))
 print(multiply_words(t))

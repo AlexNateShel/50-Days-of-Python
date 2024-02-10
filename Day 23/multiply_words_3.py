@@ -12,15 +12,12 @@ t = 'Hate war love Peace'
 import math
 
 def multiply_words(s: str):
-    words_length = { }
-    answer = 1
+    words_len = []
     for word in s.split():
         if word.islower():
-           words_length[word] = len(word)
-    for v in words_length:
-        answer =  answer * words_length[v]
-    return f'{answer}: {words_length}'
-
+            words_len.append(len(word))
+        words_prod = math.prod(words_len)
+    return f"The product of the words lengths is: {words_prod}"
 
 print(multiply_words(s))
 print(multiply_words(t))
