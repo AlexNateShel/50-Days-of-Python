@@ -8,7 +8,7 @@
 
 def count_the_vowels(word: str):
     count = 0
-    vowels = ['a', 'i', 'e', 'o', 'u']
+    vowels = ['A', 'E', 'I', 'O', 'U', 'a', 'i', 'e', 'o', 'u']
     vowels_count = []
 
     if type(word) != str:
@@ -34,7 +34,6 @@ str1 = 'hello'
 str2 = 'saas'
 str3 = 'sly'
 str4 = 100
-str5 = ''
 print(count_the_vowels(str1))
 print(count_the_vowels(str2))
 print(count_the_vowels(str3))
