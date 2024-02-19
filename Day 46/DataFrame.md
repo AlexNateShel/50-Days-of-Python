@@ -15,11 +15,9 @@
 ### The following table is what you will extract from the website.
 |Type                     | Mutability |   Description                                                                          |Syntax examples           |
 | :---                    | :---       | :---                                                                                   | :---                      
-|bool                     |immmutable  |Boolean Value |True  False |
-|bytearray                |mutable     |Sequnce of bytes | bytearray(b'Some ASCII')
-bytearray(b"Some ASCII")
-bytearray([119, 105, 107, 105])
-|bytes                    |immutable   |Sequence of bytes |
+|bool                     |immmutable  |Boolean Value |True <br> False |
+|bytearray                |mutable     |Sequnce of bytes | bytearray(b'Some ASCII') <br> bytearray(b"Some ASCII") <br> bytearray([119, 105, 107, 105]) |
+|bytes                    |immutable   |Sequence of bytes |b'Some ASCII'<br> b"Some ASCII" <br> bytes([119, 105, 107, 105])
 |complex                  |immutable   |Complex number with real and imaginary parts |
 |dict                     |mutable     |Associative array (or dictionary) of key and value pairs; can contain mixed types (keys and values), keys must be a hashable type |
 |types.EllipsisType       |immutable   |An ellipsis placeholder to be used as an index in NumPy arrays |
