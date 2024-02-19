@@ -33,4 +33,4 @@
 |tuple                    |immutable   |Can contain mixed types |(4.0, 'string', True) <br> ('single element',) <br> () |
 
 ### Once you extract this table, you will write a code that will extract the data types and their mutability (Two columns). Here is how your ouput should look:
-![Expected output](/assets/images/screenshot.png/)
+![Expected output](/Day 46/screenshot.png/)
