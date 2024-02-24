@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+    </head>
+    <body>
+        <div class='navbar'>
+            <strong><a href="{{url_for('home')}}">Home</a></strong>
+            <stong><a href="{{url_for('about')}}">About</a></stong>
+        </div>
+    </body>
+{% block content %}
+{% endblock %}
+</html>
