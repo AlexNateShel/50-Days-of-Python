@@ -1,1 +1,1 @@
-50-Days-of-Python.github.io
+Solutions to all of the 50-Days-of-Python Problems.
